@@ -10,7 +10,7 @@ mkdir lib
 mkdir lib/linux
 cd build
 cmake .. -DMYGUI_RENDERSYSTEM=7 -DMYGUI_STATIC=ON
-make -j10
+make -j4
 cd ..
 cp -r ./build/lib/* ./lib/linux
 
@@ -21,6 +21,6 @@ mkdir build
 mkdir lib/win
 cd build
 cmake CMAKE_CXX_COMPILER=x86_64-w64-mingw32-g++ .. -DMYGUI_RENDERSYSTEM=7 -DMYGUI_STATIC=ON
-make -j10
+make -j4
 cd ..
 cp -r ./build/lib/* ./lib/win
